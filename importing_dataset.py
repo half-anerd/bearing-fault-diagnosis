@@ -9,7 +9,7 @@ y_train = numpy.asarray(data.y_train)
 
 df = pd.concat([pd.DataFrame(x_train), pd.DataFrame(y_train, columns=['labels'])], axis=1)
 
-arr = [9, 11, 13]
+arr = [9, 11, 12, 13]
 df = df[df.labels.isin(arr) == True]
 
 print(df.head())
